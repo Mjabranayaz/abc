@@ -1,0 +1,47 @@
+import matplotlib.pyplot as plt
+
+# Feedback categories
+positive_feedback = ["Lovely regular customers. Met some good friends",
+                     "Friendly and supportive staff who were happy to swap shifts. Tips",
+                     "Staff discount on cakes and food",
+                     "You learn basic management tasks and can improve your communication skills. Free lunch and cakes.",
+                     "It pays your bills if you're single and live in shared accommodation",
+                     "The staff at my store are nice. You get free food and drink, even though you aren't officially allowed it. You get to keep your tips if you are a waiter."]
+
+negative_feedback = ["The only good thing was that it was located only three minutes walking from the place that I used to live.",
+                     "If you want a culture where the quality of the product, the customer, the brand and the staff are key to how the business works, avoid C&C.",
+                     "Nothing at all was positive",
+                     "No real opportunities for advancement",
+                     "Never put enough staff on shift. Bad at giving breaks, you can work an 8-9 hour shift and not be given a 30-minute break. Never know when your shift will end.",
+                     "Every unit is understaffed, always.",
+                     "It was soul-destroying, you're taken advantage of and paid very little and you are spoken to by management like you’re a child (in front of customers)",
+                     "No gratitude for anything, lazy people get paid the same as hard-working employees",
+                     "Payroll is terrible, consistently mess up pay and will throw the blame on each other rather than own their own mistakes.",
+                     "Head office only cares about the numbers, not the people",
+                     "Some managers are controlling to the point of bullying. While others couldn’t care less. The unit managers and HQ are also incompetent. Nothing gets resolved quickly or accurately.",
+                     "Horrible management, no training at all",
+                     "Terrible company to work for expected to give absolutely everything for nothing in return. Won’t pay for overtime.",
+                     "A lot of unfairness. If the manager is your friend you'll have advantages Senior managers tend to be offensive and won't think twice before humiliating you.",
+                     "Customers can be super nasty. They will call you names and shout at you for the smallest things.",
+                     "Management are underqualified and not trained. Many health and safety violations, especially regarding food. Equipment doesn't get fixed, and the lack of training means things break a lot",
+                     "Management are more concerned about reaching unrealistic goals than the wellbeing of their staff or the quality of service provided.",
+                     "Longstanding staff are not appreciated or rewarded. Low pay. Little to no training.",
+                     "Managers don’t listen, they tell us what to do with little or no consideration for us.",
+                     "Rude customers sometimes, repetitive and same tasks most shifts.",
+                     "Managers seem to treat staff as a machine, they don’t know how to treat us.",
+                     "People do not stay with the company for long and there are not enough trained people to work in the shops.",
+                     "A very poor company on SOOOOO many levels - they won't care about you - don't go & work for them - they are full of the proverbial !!"]
+
+# Count the number of comments in each category
+num_positive = len(positive_feedback)
+num_negative = len(negative_feedback)
+
+# Plotting the bar chart
+categories = ['Positive Feedback', 'Negative Feedback']
+counts = [num_positive, num_negative]
+
+plt.bar(categories, counts, color=['green', 'red'])
+plt.title('Feedback on Company')
+plt.xlabel('Feedback Category')
+plt.ylabel('Number of Comments')
+plt.show()
